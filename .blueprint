@@ -1,0 +1,29 @@
+created:
+    - database/migrations/2020_06_17_143124_create_authors_table.php
+    - database/migrations/2020_06_17_143125_create_categories_table.php
+    - database/migrations/2020_06_17_143126_create_courses_table.php
+    - database/migrations/2020_06_17_143127_create_pricings_table.php
+    - database/migrations/2020_06_17_143128_create_benefits_table.php
+    - database/migrations/2020_06_17_143128_create_category_course_table.php
+    - app/Author.php
+    - app/Category.php
+    - app/Course.php
+    - app/Pricing.php
+    - app/Benefit.php
+    - database/factories/AuthorFactory.php
+    - database/factories/CategoryFactory.php
+    - database/factories/CourseFactory.php
+    - database/factories/PricingFactory.php
+    - database/factories/BenefitFactory.php
+    - database/seeds/AuthorSeeder.php
+    - database/seeds/CategorySeeder.php
+    - database/seeds/CourseSeeder.php
+    - database/seeds/PricingSeeder.php
+    - database/seeds/BenefitSeeder.php
+models:
+    Author: { name: string, bio: 'longtext nullable', avatar: 'string nullable', website: 'string nullable', twitter: 'string nullable', github: 'string nullable', relationships: { hasMany: Course } }
+    Benefit: { benefit: string, pricing_id: 'id foreign:pricings', relationships: { BelongsTo: Pricing } }
+    Category: { name: string, relationships: { belongsToMany: Course } }
+    Course: { name: string, author_id: 'id foreign:authors', image: 'string nullable', description: longtext, website: string, published_at: 'nullable timestamp', relationships: { belongsTo: Author, hasMany: Pricing } }
+    Pricing: { amount: integer, cadence: 'string default:''once''', course_id: 'id foreign:courses', relationships: { belongsTo: Course, hasMany: Benefit } }
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }

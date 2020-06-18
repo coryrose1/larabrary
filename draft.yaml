@@ -1,0 +1,39 @@
+models:
+  Author:
+    name: string
+    bio: longtext nullable
+    avatar: string nullable
+    website: string nullable
+    twitter: string nullable
+    github: string nullable
+    relationships:
+      belongsToMany: Course
+  Category:
+    name: string
+    relationships:
+      belongsToMany: Course
+  Course:
+    name: string
+    author_id: id foreign:authors
+    image: string nullable
+    summary: string
+    description: longtext
+    website: string
+    published_at: nullable timestamp
+    relationships:
+      belongsToMany: Author
+      hasMany: Pricing
+  Pricing:
+    amount: integer
+    cadence: string default:'once'
+    course_id: id foreign:courses
+    relationships:
+      belongsTo: Course
+      hasMany: Benefit
+  Benefit:
+    benefit: string
+    pricing_id: id foreign:pricings
+    relationships:
+      belongsTo: Pricing
+
+seeders: Author, Category, Course, Pricing, Benefit
