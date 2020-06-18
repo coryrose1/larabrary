@@ -32,14 +32,14 @@ class AuthorForm extends Component
 
         Author::create([
             'name' => $this->name,
-            'avatar' => $filename ? $filename : null,
+            'avatar' => isset($filename) ? $filename : null,
             'website' => $this->website,
             'github' => $this->github,
             'twitter' => $this->twitter,
             'bio' => $this->bio
         ]);
 
-        return redirect('/');
+        $this->dispatchBrowserEvent('notify', 'Author created');
     }
 
     //public function updated($field)
@@ -51,7 +51,7 @@ class AuthorForm extends Component
     {
         return [
             'name' => 'required|min:6',
-            'avatar' => 'image|max:2000',
+            'avatar' => 'nullable|image|max:2000',
             'website' => ['nullable', 'sometimes', new ValidDomain],
             'github' => 'nullable|sometimes|string|min:5',
             'twitter' => 'nullable|sometimes|string|min:5',
