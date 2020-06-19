@@ -98,8 +98,7 @@ class CreateAuthorTest extends TestCase
             ->set('github', 'adamwathan')
             ->set('twitter', 'adamwathan')
             ->set('avatar', $file)
-            ->call('save')
-            ->assertRedirect('/');
+            ->call('save');
 
         $this->assertTrue(Author::where('name', 'Adam Wathan')->whereNotNull('avatar')->exists());
         Storage::disk('author-avatars')->assertExists(Author::where('name', 'Adam Wathan')->first()->avatar);

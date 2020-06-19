@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Storage;
 
 class Course extends Model
 {
@@ -13,7 +15,6 @@ class Course extends Model
      */
     protected $fillable = [
         'name',
-        'author_id',
         'image',
         'summary',
         'description',
@@ -54,5 +55,12 @@ class Course extends Model
     public function pricings()
     {
         return $this->hasMany(\App\Pricing::class);
+    }
+
+    public function getImageUrlAttribute()
+    {
+        return $this->image
+            ? Storage::disk('course-avatars')->url($this->image)
+            : 'https://avatars.dicebear.com/api/bottts/'. Request::ip() .'.svg';
     }
 }

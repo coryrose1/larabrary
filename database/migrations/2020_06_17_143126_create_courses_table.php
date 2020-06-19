@@ -18,7 +18,7 @@ class CreateCoursesTable extends Migration
             $table->string('name');
             $table->string('image')->nullable();
             $table->string('summary');
-            $table->longText('description');
+            $table->longText('description')->nullable();
             $table->string('website');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();

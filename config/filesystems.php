@@ -55,6 +55,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'course-avatars' => [
+            'driver' => 'local',
+            'root' => storage_path('app/avatars/courses'),
+            'url' => env('APP_URL').'/avatars/courses',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
