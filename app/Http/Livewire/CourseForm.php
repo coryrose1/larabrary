@@ -112,7 +112,7 @@ class CourseForm extends Component
             'selectedAuthors' => 'required|array|max:3',
             'selectedCategories' => 'required|array|max:9',
             'image' => 'nullable|image|max:2000',
-            'website' => ['nullable', 'sometimes', new ValidDomain],
+            'website' => ['nullable', 'sometimes', 'string'],
             'summary' => 'required|string',
             'description' => 'nullable|sometimes|string',
         ];

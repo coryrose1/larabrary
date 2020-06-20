@@ -1,6 +1,6 @@
-@props(['color' => 'yellow-800', 'activeColor' => 'yellow-600'])
+@props(['color' => 'charcoal', 'activeColor' => 'indigo-900'])
 <a {{ $attributes->merge([
-'class' => 'text-base leading-6 font-medium text-'.$color.' hover:text-'.$activeColor.' focus:outline-none focus:text-'.$activeColor.' transition ease-in-out duration-150'
+'class' => 'font-cursive text-lg leading-6 font-medium text-'.$color.' border-b-3 border-transparent border-dashed hover:border-'.$color.' focus:outline-none focus:border-'.$color.' transition ease-in-out duration-150'
 ]) }}>
     {{ $slot }}
 </a>

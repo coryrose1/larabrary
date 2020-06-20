@@ -1,23 +1,23 @@
 <div class="relative max-w-7xl mx-auto">
-    <h3 class="text-3xl font-semibold leading-6">Courses</h3>
-    <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+    <h3 class="text-3xl font-semibold text-charcoal font-cursive leading-6">Courses</h3>
+    <div class="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-2 lg:max-w-none">
         @foreach ($courses as $course)
-        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+        <div class="flex items-center rounded-lg overflow-hidden">
             <div class="flex-shrink-0">
-                <img class="h-48 w-full object-cover object-top"
+                <img class="w-48 h-full object-contain object-center"
                      src="{{ $course->imageUrl }}"
                      alt="{{ $course->name }}"/>
             </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+            <div class="flex-1 border-b-3 border-r-3 border-yellow-300 border-dashed p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                    <a href="#" class="block">
-                        <h3 class="text-xl leading-7 font-semibold text-gray-900">
+                    <x-link href="#" class="inline-flex">
+                        <h3 class="text-2xl font-cursive tracking-wide leading-7 font-semibold text-charcoal">
                             {{ Str::title($course->name) }}
                         </h3>
-                        <p class="mt-3 text-base leading-6 text-gray-500">
-                           {!! $course->description !!}
-                        </p>
-                    </a>
+                    </x-link>
+                    <p class="mt-3 text-base leading-6 text-gray-500">
+                        {{ $course->summary }}
+                    </p>
                     <ul class="mt-4 flex text-sm leading-5 text-gray-500 space-x-2">
                         @foreach ($course->categories as $category)
                             <li>

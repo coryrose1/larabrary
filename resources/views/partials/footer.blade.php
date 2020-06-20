@@ -15,7 +15,7 @@
             </div>
         </nav>
         <div class="mt-8 flex justify-center">
-            <x-logo class="h-36 w-auto" />
+            <x-logo class="h-12 w-auto" />
         </div>
     </div>
 </footer>

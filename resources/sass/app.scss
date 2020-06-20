@@ -16,6 +16,11 @@
  */
 [x-cloak] { display: none; }
 
+@font-face {
+    font-family: Mikado;
+    src: url('/fonts/MikadoBold.otf');
+}
+
  input:invalid, textarea:invalid, select:invalid {
     box-shadow: none;
 }

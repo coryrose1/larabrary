@@ -1,9 +1,9 @@
-<div x-data="{ open: false }" class="relative bg-yellow-50">
+<div x-data="{ open: false }" class="relative">
     <div class="container mx-auto">
         <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
             <div>
                 <a href="/" class="flex">
-                    <x-logo class="h-10 w-auto"/>
+                    <span class="font-cursive text-4xl text-orange-400 leading-loose">Larabrary</span>
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">

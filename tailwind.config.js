@@ -5,8 +5,17 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                cursive: ['MuseoModerno'],
+                cursive: ['Mikado'],
             },
+            borderWidth: {
+                '3': '3px',
+            },
+            colors: {
+                'midnight': '#002f3c',
+                'charcoal': '#2F394D',
+                'electric-pink': '#E01A4F',
+                'treetop-green': '#4C956C',
+            }
         },
     },
     variants: {},

@@ -23,7 +23,7 @@
     <body class="bg-yellow-50 font-antialiased">
         <div class="flex flex-col min-h-screen">
             @include('partials.nav')
-            <main class="flex-1 bg-white">
+            <main class="flex-1">
                 {{ $slot }}
             </main>
             @include('partials.footer')
