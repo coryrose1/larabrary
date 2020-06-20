@@ -14,6 +14,8 @@
  *
  * See: https://github.com/laravel-frontend-presets/tall/issues/7
  */
+[x-cloak] { display: none; }
+
  input:invalid, textarea:invalid, select:invalid {
     box-shadow: none;
 }

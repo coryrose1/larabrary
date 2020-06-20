@@ -607,6 +607,10 @@ video {
  * See: https://github.com/laravel-frontend-presets/tall/issues/7
  */
 
+[x-cloak] {
+  display: none;
+}
+
 input:invalid, textarea:invalid, select:invalid {
   box-shadow: none;
 }
@@ -11859,6 +11863,10 @@ input:invalid, textarea:invalid, select:invalid {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-cursive {
+  font-family: MuseoModerno;
 }
 
 .font-hairline {
@@ -47650,6 +47658,10 @@ input:invalid, textarea:invalid, select:invalid {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-cursive {
+    font-family: MuseoModerno;
+  }
+
   .sm\:font-hairline {
     font-weight: 100;
   }
@@ -83428,6 +83440,10 @@ input:invalid, textarea:invalid, select:invalid {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-cursive {
+    font-family: MuseoModerno;
   }
 
   .md\:font-hairline {
@@ -119210,6 +119226,10 @@ input:invalid, textarea:invalid, select:invalid {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-cursive {
+    font-family: MuseoModerno;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -154988,6 +155008,10 @@ input:invalid, textarea:invalid, select:invalid {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-cursive {
+    font-family: MuseoModerno;
   }
 
   .xl\:font-hairline {

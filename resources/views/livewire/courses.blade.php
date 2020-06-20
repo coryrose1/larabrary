@@ -4,35 +4,35 @@
         @foreach ($courses as $course)
         <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
             <div class="flex-shrink-0">
-                <img class="h-48 w-full object-cover"
-                     src="{{ $course->image }}"
+                <img class="h-48 w-full object-cover object-top"
+                     src="{{ $course->imageUrl }}"
                      alt="{{ $course->name }}"/>
             </div>
             <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                    <ul class="flex text-sm leading-5 text-gray-500 space-x-4">
-                        @foreach ($course->categories as $category)
-                        <li>
-                            <a>
-                                {{ $category->name }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
                     <a href="#" class="block">
-                        <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                        <h3 class="text-xl leading-7 font-semibold text-gray-900">
                             {{ Str::title($course->name) }}
                         </h3>
                         <p class="mt-3 text-base leading-6 text-gray-500">
-                            {{ $course->description }}
+                           {!! $course->description !!}
                         </p>
                     </a>
+                    <ul class="mt-4 flex text-sm leading-5 text-gray-500 space-x-2">
+                        @foreach ($course->categories as $category)
+                            <li>
+                                <a class="bg-purple-100 text-purple-700 px-2 py-1 rounded-md">
+                                    {{ $category->name }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
                 <div class="mt-6 flex items-center">
                     <div class="flex-shrink-0">
                         <a href="#">
-                            <img class="h-10 w-10 rounded-full"
-                                 src="{{ $course->authors->first()->avatar }}"
+                            <img class="h-10 w-10 rounded-full object-cover"
+                                 src="{{ $course->authors->first()->avatarUrl }}"
                                  alt="{{ $course->authors->first()->name }}"/>
                         </a>
                     </div>
