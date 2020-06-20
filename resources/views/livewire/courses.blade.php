@@ -21,7 +21,7 @@
                     <ul class="mt-4 flex text-sm leading-5 text-gray-500 space-x-2">
                         @foreach ($course->categories as $category)
                             <li>
-                                <a class="bg-purple-100 text-purple-700 px-2 py-1 rounded-md">
+                                <a class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded-md">
                                     {{ $category->name }}
                                 </a>
                             </li>

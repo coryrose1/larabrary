@@ -1,4 +1,4 @@
-<footer class="bg-purple-50">
+<footer class="bg-yellow-50">
     <div class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav class="-mx-5 -my-2 flex flex-wrap justify-center">
             <div class="px-5 py-2">
@@ -15,7 +15,7 @@
             </div>
         </nav>
         <div class="mt-8 flex justify-center">
-            <x-logo class="h-12 w-auto" />
+            <x-logo class="h-36 w-auto" />
         </div>
     </div>
 </footer>

@@ -1,4 +1,4 @@
-<div x-data="{ open: false }" class="relative bg-purple-50">
+<div x-data="{ open: false }" class="relative bg-yellow-50">
     <div class="container mx-auto">
         <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
             <div>
@@ -9,8 +9,8 @@
             <div class="-mr-2 -my-2 md:hidden">
                 <x-button @click="open = true"
                 color="transparent"
-                activeColor="purple-200"
-                text="purple-800">
+                activeColor="yellow-200"
+                text="yellow-800">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M4 6h16M4 12h16M4 18h16"/>
@@ -62,8 +62,8 @@
                         <div class="-mr-2">
                             <x-button @click="open = false"
                                       color="transparent"
-                                      activeColor="purple-200"
-                                      text="purple-800">
+                                      activeColor="yellow-200"
+                                      text="yellow-800">
                                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M6 18L18 6M6 6l12 12"/>
