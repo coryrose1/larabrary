@@ -31,3 +31,8 @@ Route::middleware('auth')->group(function () {
 
     Route::view('password/confirm', 'auth.passwords.confirm')->name('password.confirm');
 });
+
+Route::prefix('courses')->group(function (){
+   Route::view('/', 'courses.index')->name('courses');
+    Route::get('/{course:slug}', 'CoursesController@show')->name('courses.show');
+});

@@ -4,7 +4,7 @@
             <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-charcoal sm:text-5xl sm:leading-none md:text-6xl">
                 Browse the best courses in
                 <br/>
-                the <span class="text-brand-stroke">Laravel ecosystem
+                the <span class="text-stroke-lg">Laravel ecosystem
           </span>
             </h2>
             <p class="mt-3 max-w-md mx-auto text-base text-yellow-900 text-lg sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl">
@@ -25,19 +25,7 @@
             </div>
         </div>
     </section>
-    <section class="py-10">
-        <div class="container mx-auto">
-            @livewire('author-form')
-        </div>
-    </section>
-    <section class="py-10">
-        <div class="container mx-auto">
-            @livewire('course-form')
-        </div>
-    </section>
-    <section class="py-10">
-        <div class="container mx-auto">
-            @livewire('courses')
-        </div>
-    </section>
+    <x-section title="Courses">
+        @livewire('courses')
+    </x-section>
 </x-layout>

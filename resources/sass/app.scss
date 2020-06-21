@@ -39,8 +39,29 @@
     font-style: normal;
 }
 
-.text-brand-stroke {
+.text-stroke {
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #744210;
+    paint-order: fill stroke markers;
+}
+
+.text-stroke-lg {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #744210;
+    paint-order: fill stroke markers;
+}
+
+.text-stroke-yellow {
+    -webkit-text-fill-color: #F6E05E;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #744210;
+    paint-order: fill stroke markers;
+}
+
+.text-stroke-yellow-lg {
+    -webkit-text-fill-color: #F6E05E;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #744210;
     paint-order: fill stroke markers;

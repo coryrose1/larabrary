@@ -18,7 +18,7 @@
                 </x-button>
             </div>
             <nav class="hidden md:flex space-x-10">
-                <x-link href="#" class="flex items-center">
+                <x-link href="{{ route('courses') }}" class="flex items-center">
                     <x-icon-ebook class="h-6 w-6"/>
                     <span class="ml-1">Courses</span>
                 </x-link>
