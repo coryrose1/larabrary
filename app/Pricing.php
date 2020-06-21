@@ -15,6 +15,9 @@ class Pricing extends Model
         'amount',
         'cadence',
         'course_id',
+        'on_sale',
+        'on_sale_amount',
+        'on_sale_until',
     ];
 
     /**
@@ -25,6 +28,15 @@ class Pricing extends Model
     protected $casts = [
         'id' => 'integer',
         'course_id' => 'integer',
+    ];
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [
+        'on_sale_until',
     ];
 
 

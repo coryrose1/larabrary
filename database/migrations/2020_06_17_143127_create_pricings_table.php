@@ -15,9 +15,12 @@ class CreatePricingsTable extends Migration
     {
         Schema::create('pricings', function (Blueprint $table) {
             $table->id();
-            $table->integer('amount');
+            $table->unsignedInteger('amount')->default(0);
             $table->string('cadence')->default('once');
             $table->foreignId('course_id')->constrained()->cascadeOnDelete();
+            $table->boolean('on_sale')->default(0);
+            $table->unsignedInteger('on_sale_amount')->default(0);
+            $table->dateTime('on_sale_until')->nullable();
             $table->timestamps();
         });
     }
