@@ -1,9 +1,9 @@
 <div x-data="{ open: false }" class="relative">
     <div class="container mx-auto">
         <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-            <div>
+            <div class="lg:w-0 lg:flex-1">
                 <a href="/" class="flex">
-                    <span class="font-cursive text-4xl text-orange-400 leading-loose">Larabrary</span>
+                    <x-logo class="h-12 w-auto" />
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
@@ -17,25 +17,23 @@
                     </svg>
                 </x-button>
             </div>
-            <div class="hidden md:flex-1 md:flex md:items-center md:justify-between md:space-x-12">
-                <nav class="flex space-x-10">
-                    <x-link href="#" class="flex items-center">
-                        <x-icon-ebook class="h-6 w-6"/>
-                        <span class="ml-1">Courses</span>
-                    </x-link>
-                    <x-link href="#" class="flex items-center">
-                        <x-icon-author class="h-6 w-6"/>
-                        <span class="ml-1">Authors</span>
-                    </x-link>
-                </nav>
-                <div class="flex items-center space-x-8">
-                    <x-link href="#">Sign In</x-link>
-                    <span class="inline-flex rounded-md shadow-sm">
+            <nav class="hidden md:flex space-x-10">
+                <x-link href="#" class="flex items-center">
+                    <x-icon-ebook class="h-6 w-6"/>
+                    <span class="ml-1">Courses</span>
+                </x-link>
+                <x-link href="#" class="flex items-center">
+                    <x-icon-author class="h-6 w-6"/>
+                    <span class="ml-1">Authors</span>
+                </x-link>
+            </nav>
+            <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
+                <x-link href="#">Sign In</x-link>
+                <span class="inline-flex rounded-md shadow-sm">
                         <x-button-link href="#">
                             Sign up
                         </x-button-link>
                     </span>
-                </div>
             </div>
         </div>
     </div>

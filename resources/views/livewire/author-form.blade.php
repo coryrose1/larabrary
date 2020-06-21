@@ -1,9 +1,9 @@
 <div>
-    <h1 class="text-2xl font-cursive font-semibold tracking-wide text-charcoal">Create a new author</h1>
+    <h1 class="text-2xl font-semibold tracking-wide text-charcoal">Create a new author</h1>
     <form wire:submit.prevent="save">
         <div class="mt-6 sm:mt-5 space-y-6">
             <x-input.group label="Name" for="name" :error="$errors->first('name')">
-                <x-input.text wire:model="name" id="name"/>
+                <x-input.text wire:model="name" id="name" placeholder="John Doe"/>
             </x-input.group>
             <x-input.group label="Avatar" for="avatar" :error="$errors->first('avatar')">
                 <x-input.file-upload wire:model="avatar" id="avatar">

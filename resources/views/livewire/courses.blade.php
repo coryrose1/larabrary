@@ -1,5 +1,5 @@
 <div class="relative max-w-7xl mx-auto">
-    <h3 class="text-3xl font-semibold text-charcoal font-cursive leading-6">Courses</h3>
+    <h3 class="text-3xl font-semibold text-charcoal leading-6">Courses</h3>
     <div class="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-2 lg:max-w-none">
         @foreach ($courses as $course)
         <div class="flex items-center rounded-lg overflow-hidden">
@@ -8,10 +8,10 @@
                      src="{{ $course->imageUrl }}"
                      alt="{{ $course->name }}"/>
             </div>
-            <div class="flex-1 border-b-3 border-r-3 border-yellow-300 border-dashed p-6 flex flex-col justify-between">
+            <div class="flex-1 border-b-3 border-r-3 border-orange-200 border-dashed p-6 flex flex-col justify-between">
                 <div class="flex-1">
                     <x-link href="#" class="inline-flex">
-                        <h3 class="text-2xl font-cursive tracking-wide leading-7 font-semibold text-charcoal">
+                        <h3 class="text-2xl tracking-wide leading-7 font-semibold text-charcoal">
                             {{ Str::title($course->name) }}
                         </h3>
                     </x-link>

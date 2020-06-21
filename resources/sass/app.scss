@@ -17,8 +17,33 @@
 [x-cloak] { display: none; }
 
 @font-face {
+    font-family: "DroidSerif";
+    src: url("DroidSerif-Regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: Mikado;
-    src: url('/fonts/MikadoBold.otf');
+    src: url('/fonts/Mikado.woff2') format('woff2'),
+    url('/fonts/Mikado.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Mikado;
+    src: url('/fonts/MikadoBold.woff2') format('woff2'),
+    url('/fonts/MikadoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.text-brand-stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #744210;
+    paint-order: fill stroke markers;
 }
 
  input:invalid, textarea:invalid, select:invalid {

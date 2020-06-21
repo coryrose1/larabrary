@@ -8,5 +8,6 @@
     @trix-blur="$dispatch('change', $event.target.value)"
 >
     <input id="x" value="{{ $initialValue }}" type="hidden">
-    <trix-editor input="x" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"></trix-editor>
+    <trix-editor input="x" class="flex-1 block w-full transition duration-150 ease-in-out sm:leading-5
+            bg-transparent border-3 border-blue-300 border-dashed rounded text-xl leading-loose p-2 text-charcoal focus:bg-yellow-100"></trix-editor>
 </div>

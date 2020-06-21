@@ -423,7 +423,7 @@ ul {
  */
 
 html {
-  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -612,9 +612,40 @@ video {
 }
 
 @font-face {
+  font-family: "DroidSerif";
+
+  src: url("DroidSerif-Regular-webfont.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
   font-family: Mikado;
 
-  src: url("/fonts/MikadoBold.otf");
+  src: url("/fonts/Mikado.woff2") format("woff2"), url("/fonts/Mikado.woff") format("woff");
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Mikado;
+
+  src: url("/fonts/MikadoBold.woff2") format("woff2"), url("/fonts/MikadoBold.woff") format("woff");
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+.text-brand-stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #744210;
+  paint-order: fill stroke markers;
 }
 
 input:invalid, textarea:invalid, select:invalid {
@@ -12180,7 +12211,7 @@ input:invalid, textarea:invalid, select:invalid {
 }
 
 .font-sans {
-  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -12189,10 +12220,6 @@ input:invalid, textarea:invalid, select:invalid {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-cursive {
-  font-family: Mikado;
 }
 
 .font-hairline {
@@ -48653,7 +48680,7 @@ input:invalid, textarea:invalid, select:invalid {
   }
 
   .sm\:font-sans {
-    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -48662,10 +48689,6 @@ input:invalid, textarea:invalid, select:invalid {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .sm\:font-cursive {
-    font-family: Mikado;
   }
 
   .sm\:font-hairline {
@@ -85117,7 +85140,7 @@ input:invalid, textarea:invalid, select:invalid {
   }
 
   .md\:font-sans {
-    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -85126,10 +85149,6 @@ input:invalid, textarea:invalid, select:invalid {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .md\:font-cursive {
-    font-family: Mikado;
   }
 
   .md\:font-hairline {
@@ -121581,7 +121600,7 @@ input:invalid, textarea:invalid, select:invalid {
   }
 
   .lg\:font-sans {
-    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -121590,10 +121609,6 @@ input:invalid, textarea:invalid, select:invalid {
 
   .lg\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .lg\:font-cursive {
-    font-family: Mikado;
   }
 
   .lg\:font-hairline {
@@ -158045,7 +158060,7 @@ input:invalid, textarea:invalid, select:invalid {
   }
 
   .xl\:font-sans {
-    font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Mikado, Inter var, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -158054,10 +158069,6 @@ input:invalid, textarea:invalid, select:invalid {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-
-  .xl\:font-cursive {
-    font-family: Mikado;
   }
 
   .xl\:font-hairline {

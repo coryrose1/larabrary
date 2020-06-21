@@ -4,8 +4,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-                cursive: ['Mikado'],
+                sans: ['Mikado', 'Inter var', ...defaultTheme.fontFamily.sans],
             },
             borderWidth: {
                 '3': '3px',
