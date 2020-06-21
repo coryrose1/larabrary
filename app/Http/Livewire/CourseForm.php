@@ -47,6 +47,7 @@ class CourseForm extends Component
 
         $course = Course::create([
             'name' => $this->name,
+            'slug' => Str::slug($this->name),
             'image' => isset($filename) ? $filename : null,
             'website' => $this->website,
             'summary' => $this->summary,
