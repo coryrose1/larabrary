@@ -8,6 +8,9 @@
                 <x-link href="#">Authors</x-link>
             </div>
             <div class="px-5 py-2">
+                <x-link href="#">Categories</x-link>
+            </div>
+            <div class="px-5 py-2">
                 <x-link href="#">Submit a course</x-link>
             </div>
             <div class="px-5 py-2">

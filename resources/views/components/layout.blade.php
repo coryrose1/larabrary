@@ -20,7 +20,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
 
-    <body class="bg-yellow-50 font-antialiased">
+    <body class="bg-yellow-50">
         <div class="flex flex-col min-h-screen">
             @include('partials.nav')
             <main class="flex-1">

@@ -1,7 +1,7 @@
 <div class="mt-12 grid gap-12 max-w-lg mx-auto lg:grid-cols-2 lg:max-w-none">
     @foreach ($courses as $course)
-        <div class="bg-gray-50 shadow-lg flex items-center rounded-lg overflow-hidden">
-            <div class="flex-shrink-0 p-4">
+        <div class="bg-gray-50 shadow-lg flex flex-col md:flex-row rounded-lg overflow-hidden">
+            <div class="flex-shrink-0 p-4 flex justify-center">
                 <img class="w-48 h-full object-contain object-center"
                      src="{{ $course->imageUrl }}"
                      alt="{{ $course->name }}"/>
@@ -17,17 +17,15 @@
                         {{ $course->summary }}
                     </p>
                 </div>
-                <div>
-                    <ul class="mt-4 flex flex-wrap-reverse items-end text-sm leading-5 text-gray-500">
-                        @foreach ($course->categories as $category)
-                            <li class="pr-2 pt-4">
-                                <a class="bg-gray-100 text-gray-500 px-2 py-1 rounded-md">
-                                    {{ $category->name }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
+                <ul class="mt-4 flex flex-wrap-reverse items-end text-sm leading-5 text-gray-500">
+                    @foreach ($course->categories as $category)
+                        <li class="pr-2 pt-4">
+                            <a class="bg-gray-100 text-gray-500 px-2 py-1 rounded-md">
+                                {{ $category->name }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
                 <div class="mt-6 flex items-center">
                     <div class="flex-shrink-0">
                         <a href="#">

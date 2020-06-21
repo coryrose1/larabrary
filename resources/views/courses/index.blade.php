@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="Courses | Larabrary">
     <x-section title="Courses">
         @livewire('courses')
     </x-section>

@@ -36,3 +36,11 @@ Route::prefix('courses')->group(function (){
    Route::view('/', 'courses.index')->name('courses');
     Route::get('/{course:slug}', 'CoursesController@show')->name('courses.show');
 });
+
+Route::prefix('authors')->group(function (){
+    //
+});
+
+Route::prefix('categories')->group(function (){
+    //
+});
