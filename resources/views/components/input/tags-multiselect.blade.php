@@ -22,7 +22,7 @@
                @keydown.escape.window="isOpen = false"
                @keydown.shift.tab="isOpen = false"
                class="flex-1 block w-full transition duration-150 ease-in-out sm:leading-5
-            bg-transparent border-3 border-blue-300 border-dashed rounded text-xl leading-loose p-2 text-charcoal focus:bg-yellow-100"
+            bg-transparent border-3 border-gray-400 border-dashed rounded text-xl leading-loose p-2 text-charcoal focus:bg-yellow-100"
         />
     </div>
     <div wire:loading class="absolute top-0 right-0 loading ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5 mt-2 mr-2" style="border-top-color: blue;"></div>

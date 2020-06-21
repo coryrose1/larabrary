@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="py-10 mx-auto max-w-screen-xl px-4 sm:py-12 sm:px-6 md:py-16 lg:py-20 xl:py-28">
+    <section class="py-10 mx-auto max-w-screen-xl px-4 sm:py-12 sm:px-6 md:py-16 lg:py-20">
         <div class="text-center">
             <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-charcoal sm:text-5xl sm:leading-none md:text-6xl">
                 Browse the best courses in
@@ -27,5 +27,8 @@
     </section>
     <x-section title="Courses">
         @livewire('courses')
+    </x-section>
+    <x-section title="Add a Course">
+        @livewire('course-form')
     </x-section>
 </x-layout>
