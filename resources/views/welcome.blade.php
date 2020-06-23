@@ -25,10 +25,12 @@
             </div>
         </div>
     </section>
-    <x-section title="Courses">
-        @livewire('courses')
-    </x-section>
-    <x-section title="Add a Course">
+    <div class="w-full bg-charcoal py-6">
+        <x-section title="Courses" color="yellow-50" link="View All" href="{{ route('courses') }}">
+            @livewire('courses')
+        </x-section>
+    <x-section title="Add a Course" color="yellow-50">
         @livewire('course-form')
     </x-section>
+    </div>
 </x-layout>

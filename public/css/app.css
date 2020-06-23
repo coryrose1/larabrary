@@ -612,16 +612,6 @@ video {
 }
 
 @font-face {
-  font-family: "DroidSerif";
-
-  src: url("DroidSerif-Regular-webfont.ttf") format("truetype");
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
-@font-face {
   font-family: Mikado;
 
   src: url("/fonts/Mikado.woff2") format("woff2"), url("/fonts/Mikado.woff") format("woff");
@@ -11529,6 +11519,18 @@ input:invalid, textarea:invalid, select:invalid {
   border-radius: 9999px;
 }
 
+.rounded-funky {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-funky-addon-l {
+  border-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-funky-addon-r {
+  border-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
 .rounded-t-none {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -11649,6 +11651,66 @@ input:invalid, textarea:invalid, select:invalid {
   border-bottom-left-radius: 9999px;
 }
 
+.rounded-t-funky {
+  border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-r-funky {
+  border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-b-funky {
+  border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-l-funky {
+  border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-t-funky-addon-l {
+  border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-r-funky-addon-l {
+  border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-b-funky-addon-l {
+  border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-l-funky-addon-l {
+  border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-t-funky-addon-r {
+  border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-r-funky-addon-r {
+  border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-b-funky-addon-r {
+  border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-l-funky-addon-r {
+  border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
 .rounded-tl-none {
   border-top-left-radius: 0;
 }
@@ -11743,6 +11805,54 @@ input:invalid, textarea:invalid, select:invalid {
 
 .rounded-bl-full {
   border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-funky {
+  border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-tr-funky {
+  border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-br-funky {
+  border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-bl-funky {
+  border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.rounded-tl-funky-addon-l {
+  border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-tr-funky-addon-l {
+  border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-br-funky-addon-l {
+  border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-bl-funky-addon-l {
+  border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+}
+
+.rounded-tl-funky-addon-r {
+  border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-tr-funky-addon-r {
+  border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-br-funky-addon-r {
+  border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+}
+
+.rounded-bl-funky-addon-r {
+  border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
 }
 
 .border-solid {
@@ -47998,6 +48108,18 @@ input:invalid, textarea:invalid, select:invalid {
     border-radius: 9999px;
   }
 
+  .sm\:rounded-funky {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-funky-addon-l {
+    border-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-funky-addon-r {
+    border-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .sm\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -48118,6 +48240,66 @@ input:invalid, textarea:invalid, select:invalid {
     border-bottom-left-radius: 9999px;
   }
 
+  .sm\:rounded-t-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-r-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-b-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-l-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-t-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-r-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-b-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-l-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-t-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-r-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-b-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-l-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .sm\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -48212,6 +48394,54 @@ input:invalid, textarea:invalid, select:invalid {
 
   .sm\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .sm\:rounded-tl-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-tr-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-br-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-bl-funky {
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .sm\:rounded-tl-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-tr-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-br-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-bl-funky-addon-l {
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .sm\:rounded-tl-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-tr-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-br-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .sm\:rounded-bl-funky-addon-r {
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
   }
 
   .sm\:border-solid {
@@ -84458,6 +84688,18 @@ input:invalid, textarea:invalid, select:invalid {
     border-radius: 9999px;
   }
 
+  .md\:rounded-funky {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-funky-addon-l {
+    border-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-funky-addon-r {
+    border-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .md\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -84578,6 +84820,66 @@ input:invalid, textarea:invalid, select:invalid {
     border-bottom-left-radius: 9999px;
   }
 
+  .md\:rounded-t-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-r-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-b-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-l-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-t-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-r-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-b-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-l-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-t-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-r-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-b-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-l-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .md\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -84672,6 +84974,54 @@ input:invalid, textarea:invalid, select:invalid {
 
   .md\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .md\:rounded-tl-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-tr-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-br-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-bl-funky {
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .md\:rounded-tl-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-tr-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-br-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-bl-funky-addon-l {
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .md\:rounded-tl-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-tr-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-br-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .md\:rounded-bl-funky-addon-r {
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
   }
 
   .md\:border-solid {
@@ -120918,6 +121268,18 @@ input:invalid, textarea:invalid, select:invalid {
     border-radius: 9999px;
   }
 
+  .lg\:rounded-funky {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-funky-addon-l {
+    border-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-funky-addon-r {
+    border-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .lg\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -121038,6 +121400,66 @@ input:invalid, textarea:invalid, select:invalid {
     border-bottom-left-radius: 9999px;
   }
 
+  .lg\:rounded-t-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-r-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-b-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-l-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-t-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-r-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-b-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-l-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-t-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-r-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-b-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-l-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .lg\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -121132,6 +121554,54 @@ input:invalid, textarea:invalid, select:invalid {
 
   .lg\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .lg\:rounded-tl-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-tr-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-br-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-bl-funky {
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .lg\:rounded-tl-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-tr-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-br-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-bl-funky-addon-l {
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .lg\:rounded-tl-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-tr-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-br-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .lg\:rounded-bl-funky-addon-r {
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
   }
 
   .lg\:border-solid {
@@ -157378,6 +157848,18 @@ input:invalid, textarea:invalid, select:invalid {
     border-radius: 9999px;
   }
 
+  .xl\:rounded-funky {
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-funky-addon-l {
+    border-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-funky-addon-r {
+    border-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .xl\:rounded-t-none {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -157498,6 +157980,66 @@ input:invalid, textarea:invalid, select:invalid {
     border-bottom-left-radius: 9999px;
   }
 
+  .xl\:rounded-t-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-r-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-b-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-l-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-t-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-r-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-b-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-l-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-t-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-r-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-b-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-l-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
   .xl\:rounded-tl-none {
     border-top-left-radius: 0;
   }
@@ -157592,6 +158134,54 @@ input:invalid, textarea:invalid, select:invalid {
 
   .xl\:rounded-bl-full {
     border-bottom-left-radius: 9999px;
+  }
+
+  .xl\:rounded-tl-funky {
+    border-top-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-tr-funky {
+    border-top-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-br-funky {
+    border-bottom-right-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-bl-funky {
+    border-bottom-left-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+
+  .xl\:rounded-tl-funky-addon-l {
+    border-top-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-tr-funky-addon-l {
+    border-top-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-br-funky-addon-l {
+    border-bottom-right-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-bl-funky-addon-l {
+    border-bottom-left-radius: 255px 0 0 15px/15px 0 0 225px;
+  }
+
+  .xl\:rounded-tl-funky-addon-r {
+    border-top-left-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-tr-funky-addon-r {
+    border-top-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-br-funky-addon-r {
+    border-bottom-right-radius: 0 15px 255px 0/0 225px 15px 0;
+  }
+
+  .xl\:rounded-bl-funky-addon-r {
+    border-bottom-left-radius: 0 15px 255px 0/0 225px 15px 0;
   }
 
   .xl\:border-solid {

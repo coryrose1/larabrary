@@ -29,8 +29,7 @@
                 <x-input.rich-text wire:model.lazy="bio" id="bio" />
             </x-input.group>
             <div class="w-full flex justify-end">
-                <button class="py-2 px-3 border border-gray-300 rounded-md text-sm leading-4 font-medium text-gray-700 hover:bg-gray-100">
-                    Submit</button>
+                <x-button>Submit</x-button>
             </div>
         </div>
     </form>

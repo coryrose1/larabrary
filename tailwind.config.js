@@ -9,6 +9,11 @@ module.exports = {
             borderWidth: {
                 '3': '3px',
             },
+            borderRadius: {
+                'funky': '255px 15px 225px 15px/15px 225px 15px 255px',
+                'funky-addon-l': '255px 0 0 15px/15px 0 0 225px',
+                'funky-addon-r': '0 15px 255px 0/0 225px 15px 0',
+            },
             colors: {
                 'midnight': '#002f3c',
                 'charcoal': '#2F394D',
