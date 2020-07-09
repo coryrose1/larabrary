@@ -4,7 +4,9 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Mikado', 'Inter var', ...defaultTheme.fontFamily.sans],
+                sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+                seuss: ['Mikado', ...defaultTheme.fontFamily.sans],
+                hand: ['Nanum Pen Script']
             },
             borderWidth: {
                 '3': '3px',
@@ -15,10 +17,10 @@ module.exports = {
                 'funky-addon-r': '0 15px 255px 0/0 225px 15px 0',
             },
             colors: {
-                'midnight': '#002f3c',
                 'charcoal': '#2F394D',
-                'electric-pink': '#E01A4F',
-                'treetop-green': '#4C956C',
+            },
+            opacity: {
+                '95': '0.95',
             }
         },
     },

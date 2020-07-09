@@ -1,6 +1,6 @@
 <svg {{ $attributes }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1548.54 321.52">
     <defs>
-        <style>.cls-1{fill:#fee9ab;}.cls-2{fill:#ffde55;}.cls-3,.cls-8{fill:#ffd422;}.cls-4{fill:#ebbf00;}.cls-5{fill:#a39f9b;}.cls-6{fill:#847f7b;}.cls-7{fill:#6a563d;}.cls-8{stroke:#6a563d;stroke-miterlimit:10;stroke-width:10px;}</style>
+        <style>.cls-1{fill:#EBF8FF;}.cls-2{fill:#BEE3F8;}.cls-3,.cls-8{fill:#3f83f8;}.cls-4{fill:#90CDF4;}.cls-5{fill:#a39f9b;}.cls-6{fill:#847f7b;}.cls-7{fill:#2F394D;}</style>
     </defs>
     <title>Larabrary</title>
     <path class="cls-1" d="M255.11,190.25v60.54H34.59a30.27,30.27,0,0,1,0-60.54Z"></path>

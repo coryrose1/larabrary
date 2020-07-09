@@ -1,10 +1,10 @@
 <form wire:submit.prevent="save">
     <div class="mt-6 sm:mt-5 space-y-6">
-        <x-input.group theme="dark" label="Name" for="name" :error="$errors->first('name')">
-            <x-input.text wire:model="name" id="name" theme="dark"/>
+        <x-input.group label="Name" for="name" :error="$errors->first('name')">
+            <x-input.text wire:model="name" id="name"/>
         </x-input.group>
-        <x-input.group theme="dark" label="Authors" for="authors" :error="$errors->first('selectedAuthors')">
-            <x-input.tags-multiselect theme="dark" searchTerm="searchAuthor"
+        <x-input.group label="Authors" for="authors" :error="$errors->first('selectedAuthors')">
+            <x-input.tags-multiselect searchTerm="searchAuthor"
                                       :searchValue="$searchAuthor"
                                       :availableResults="$existingAuthors"
                                       displayField="name"
@@ -17,7 +17,7 @@
             <x-slot name="helpText">Don't see them? <a href="#" class="text-blue-500 hover:text-blue-700">Create a
                     new Author</a></x-slot>
         </x-input.group>
-        <x-input.group theme="dark" label="Image" for="image" :error="$errors->first('image')">
+        <x-input.group label="Image" for="image" :error="$errors->first('image')">
             <x-input.file-upload wire:model="image" id="image" theme="dark">
                     <span class="h-12 w-12 rounded-full overflow-hidden object-center bg-gray-100">
                         @if ($image)
@@ -28,18 +28,18 @@
                     </span>
             </x-input.file-upload>
         </x-input.group>
-        <x-input.group theme="dark" label="Website" for="website" :error="$errors->first('website')">
-            <x-input.text wire:model="website" id="website" leadingAddOn="https://" theme="dark" />
+        <x-input.group label="Website" for="website" :error="$errors->first('website')">
+            <x-input.text wire:model="website" id="website" leadingAddOn="https://" />
         </x-input.group>
-        <x-input.group theme="dark" label="Summary" for="summary" :error="$errors->first('summary')"
+        <x-input.group label="Summary" for="summary" :error="$errors->first('summary')"
                        helpText="A sentence or two summarizing the material">
-            <x-input.text wire:model="summary" id="summary" theme="dark" />
+            <x-input.text wire:model="summary" id="summary" />
         </x-input.group>
-        <x-input.group theme="dark" label="Detailed Description" for="description" :error="$errors->first('description')">
-            <x-input.rich-text wire:model.lazy="description" id="description" theme="dark"  />
+        <x-input.group label="Detailed Description" for="description" :error="$errors->first('description')">
+            <x-input.rich-text wire:model.lazy="description" id="description"  />
         </x-input.group>
-        <x-input.group theme="dark" label="Categories" for="categories" :error="$errors->first('selectedCategories')">
-            <x-input.tags-multiselect theme="dark" searchTerm="searchCategory"
+        <x-input.group label="Categories" for="categories" :error="$errors->first('selectedCategories')">
+            <x-input.tags-multiselect searchTerm="searchCategory"
                                       :searchValue="$searchCategory"
                                       :availableResults="$existingCategories"
                                       displayField="name"
@@ -52,7 +52,7 @@
                                       id="categories" placeholder="Search categories"></x-input.tags-multiselect>
         </x-input.group>
         <div class="w-full flex justify-end">
-            <x-button color="yellow-100" text="yellow-50" activeColor="white">Submit</x-button>
+            <x-button color="yellow-100" text="white" activeColor="white">Submit</x-button>
         </div>
     </div>
 </form>

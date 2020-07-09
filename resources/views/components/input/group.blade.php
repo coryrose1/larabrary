@@ -7,7 +7,7 @@
 ])
 
 <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
-    <label for="{{ $for }}" class="{{ $theme == 'light' ? 'text-gray-700' : 'text-yellow-50' }}
+    <label for="{{ $for }}" class="{{ $theme == 'light' ? 'text-gray-700' : 'text-white' }}
         block font-medium leading-5 sm:mt-px sm:pt-2">
         {{ $label }}
     </label>
@@ -16,11 +16,11 @@
         {{ $slot }}
 
         @if ($error)
-            <div class="{{ $theme == 'light' ? 'text-red-500' : 'text-red-200' }} mt-1 text-sm">{{ $error }}</div>
+            <div class="{{ $theme == 'light' ? 'text-charcoal' : 'text-red-200' }} mt-1 text-sm">{{ $error }}</div>
         @endif
 
         @if ($helpText)
-            <p class="{{ $theme == 'light' ? 'text-gray-500' : 'text-yellow-50' }} mt-2 text-sm">{!! $helpText !!}</p>
+            <p class="{{ $theme == 'light' ? 'text-gray-500' : 'text-white' }} mt-2 text-sm">{!! $helpText !!}</p>
         @endif
     </div>
 </div>
