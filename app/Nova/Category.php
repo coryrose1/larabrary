@@ -3,23 +3,19 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Avatar;
-use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\Trix;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Course extends Resource
+class Category extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = \App\Course::class;
+    public static $model = \App\Category::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -47,13 +43,8 @@ class Course extends Resource
     {
         return [
             ID::make()->sortable(),
-            Avatar::make('Image')->disk('course-avatars'),
             Text::make('Name'),
-            Text::make('Summary'),
-            Trix::make('Description'),
-            Text::make('Website'),
-            BelongsToMany::make('Authors', 'authors', 'App\Nova\Author'),
-            BelongsToMany::make('Categories', 'categories', 'App\Nova\Category'),
+            BelongsToMany::make('Courses', 'courses', 'App\Nova\Course'),
         ];
     }
 
