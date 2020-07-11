@@ -19,6 +19,8 @@ class Author extends Model
         'website',
         'twitter',
         'github',
+        'is_company',
+        'company_id'
     ];
 
     /**
@@ -30,10 +32,19 @@ class Author extends Model
         'id' => 'integer',
     ];
 
-
     public function courses()
     {
         return $this->belongsToMany(\App\Course::class);
+    }
+
+    public function company()
+    {
+        return $this->belongsTo(Author::class, 'company_id', 'id');
+    }
+
+    public function authors()
+    {
+        return $this->hasMany(Author::class, 'company_id', 'id');
     }
 
     public function getAvatarUrlAttribute()

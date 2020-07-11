@@ -58,7 +58,7 @@ class Course extends Model
         return $this->hasMany(\App\Pricing::class);
     }
 
-    public function getImageUrlAttribute()
+    public function imageUrl()
     {
         return $this->image
             ? Storage::disk('course-avatars')->url($this->image)

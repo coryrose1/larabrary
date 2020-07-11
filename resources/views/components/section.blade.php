@@ -1,6 +1,6 @@
 @props(['title', 'color' => 'charcoal', 'link' => false, 'href' => ''])
 <section {{ $attributes->merge([
-'class' => 'py-12 px-4 sm:px-0 relative max-w-7xl mx-auto'
+'class' => 'py-12 px-4 sm:px-6 lg:px-8 relative max-w-screen-xl mx-auto'
 ]) }}>
     @if ($link)
         <div class="w-full flex justify-between">

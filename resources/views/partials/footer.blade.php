@@ -14,7 +14,7 @@
                 <x-link href="#">Submit a course</x-link>
             </div>
             <div class="px-5 py-2">
-                <x-link href="#">Imprint</x-link>
+                <x-link href="{{ route('imprint') }}">Imprint</x-link>
             </div>
         </nav>
         <div class="mt-8 flex justify-center">

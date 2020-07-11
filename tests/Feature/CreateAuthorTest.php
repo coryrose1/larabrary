@@ -23,8 +23,7 @@ class CreateAuthorTest extends TestCase
             ->set('website', 'adamwathan.me')
             ->set('github', 'adamwathan')
             ->set('twitter', 'adamwathan')
-            ->call('save')
-            ->assertRedirect('/');
+            ->call('save');
 
         $this->assertTrue(Author::where('name', 'Adam Wathan')->exists());
     }
@@ -78,8 +77,7 @@ class CreateAuthorTest extends TestCase
             ->set('github', '')
             ->set('twitter', '')
             ->call('save')
-            ->assertHasNoErrors(['website', 'github', 'twitter'])
-            ->assertRedirect('/');
+            ->assertHasNoErrors(['website', 'github', 'twitter']);
 
         $this->assertTrue(Author::where('name', 'Adam Wathan')->exists());
     }
