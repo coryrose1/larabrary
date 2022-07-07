@@ -44,7 +44,7 @@
         "laravel-nova": "^1.2.2",
         "laravel-vapor": "^0.4.0",
         "markdown-it": "^8.4.1",
-        "moment": "^2.22.2",
+        "moment": "^2.29.4",
         "moment-timezone": "^0.5.21",
         "mousetrap": "^1.6.3",
         "numbro": "^2.1.2",
